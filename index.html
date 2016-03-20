@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
+
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,40 +13,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- jQuery from CDN -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script src="js/app.js"></script>
+
 
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1>Tic Tac Toe</h1>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
-
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-          </div>
-
-
-
-        </div>
-      </div>
+      <div id="container">
+  			<header>
+  				<h1>Tic Tac Toe</h1>
+  			</header>
+  			<ul id="board">
+  				<li id="spot1"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot2"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot3"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot4"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot5"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot6"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot7"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot8"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  				<li id="spot9"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></li>
+  			</ul>
+        <div class="clearfix"></div>
+  			<footer>
+  				<button class="btn btn-danger" id="reset"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button>
+  			</footer>
+  		</div>
     </div>
   </body>
 </html>
